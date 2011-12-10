@@ -380,7 +380,7 @@ no_oddsratios <- function(no_classes) {
     		for (j in 1:dim(var.ri.2)[2]) {
         		if (i < j) {
             			var.ri.2[i, j] <- var.relimp.2(logodds[i, i], logodds[j, i], logodds[j, j], var.lo[i, i], var.lo[j, i],
-							var.lo[j, j], cov.lo.ii.ji[i, j], cov.lo.ii.ji[j, i])
+							var.lo[j, j], cov.lo.ii.ji[i, j], cov.lo.ii.ij[j, i])
             			}
         		}
     		}
@@ -568,7 +568,7 @@ no_oddsratios <- function(no_classes) {
 return(list("sample_size"=n.total, "no_classes"=no_classes, "class_size"=n, "percentage_overall"=perc.total,
 	"percentage_class"=perc.class, "fifty_point"=fifty.point, "parameters"=parameters, "transition_prob"=transprob, 
 	"log_odds"=logodds, "se_logodds"=se.lo, "ci_logodds"=ci.lo, "odds"=odds, "log_oddsratios"=log.oddsratios, 
-	"se_logoddsratios)"=se.log.oddsratios, "ci_logoddsratios"=ci.log.oddsratios, "oddsratios"=oddsratios, 
+	"se_logoddsratios"=se.log.oddsratios, "ci_logoddsratios"=ci.log.oddsratios, "oddsratios"=oddsratios, 
 	"rel_imp_prim1"=rel.imp.prim1, "rel_imp_prim2"=rel.imp.prim2, "rel_imp_prim_avg"=rel.imp.prim.avg,
 	"rel_imp_sec1"=rel.imp.sec1, "rel_imp_sec2"=rel.imp.sec2, "rel_imp_sec_avg"=rel.imp.sec.avg,
 	"se.ri.1"=se.ri.1, "ci.ri.1"=ci.ri.1, "se.ri.2"=se.ri.2, "ci.ri.2"=ci.ri.2, "se.ri.avg"=se.ri.avg, "ci.ri.avg"=ci.ri.avg))

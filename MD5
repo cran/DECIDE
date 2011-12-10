@@ -1,0 +1,15 @@
+dfa51ae3436ab236e6a35a4a7fee8b51 *DESCRIPTION
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+2833cf5ff9ce9e3b3dd15d52dd7215ad *R/compare.relimp.R
+2ce88d78d689d2cd60669269942e3128 *R/create.classdata.R
+28e353cbd65d8e24f1d951b5378c92a2 *R/plot_transition.R
+01b58ee464e87cc825c4d28cd04c6483 *R/prepare.data.R
+535eb62488c4a9f286ea426e02680b7f *R/print_relimp.R
+b91e81b74b1ed6a691aaf6e9330ac71e *R/relative.importance.R
+d9f61c00863264bc7a5dfe9f5c90a5a7 *man/DECIDE-package.Rd
+aec97066d07f4b6bec4b73ba0c580665 *man/compare.relimp.Rd
+565048bd90e9f48177c60fd2235b7ebd *man/create.classdata.Rd
+28f9a407343d2c6896bfcee224df8b8a *man/plot_transition.Rd
+de971069bfc7dda15bc1b38cd6eb169d *man/prepare.data.Rd
+80066d68b76fdb2f2cff178df8fa8c26 *man/print_relimp.Rd
+d8aca98916373df14123c40bd6d9e4be *man/relative.importance.Rd

@@ -50,11 +50,11 @@ relative.importance(dataset)
 
 
 \references{
-Chapter 2, \emph{Determined to Succeed? Performance, Choice and Education}, edited by Michelle Jackson (in preparation)
+Kartsonaki, C., Jackson, M. and Cox, D. R. (forthcoming). Primary and Secondary Effects: Some Methodological Issues, in Jackson, M. (Ed.), \emph{Determined to Succeed? Performance, Choice and Education}.
 
-Erikson, R., Goldthorpe, J. H., Jackson, M., Yaish, M. and Cox, D. R. (2005) On Class Differentials in Educational Attainment. \emph{Proceedings of the National Academy of Sciences}, \bold{102}: 9730--9733
+Erikson, R., Goldthorpe, J. H., Jackson, M., Yaish, M. and Cox, D. R. (2005). On Class Differentials in Educational Attainment. \emph{Proceedings of the National Academy of Sciences}, \bold{102}: 9730--9733
 
-Jackson, M., Erikson, R., Goldthorpe, J. H. and Yaish, M. (2007) Primary and secondary effects in class differentials in educational attainment: The transition to A-level courses in England and Wales. \emph{Acta Sociologica}, \bold{50} (3): 211--229
+Jackson, M., Erikson, R., Goldthorpe, J. H. and Yaish, M. (2007). Primary and secondary effects in class differentials in educational attainment: The transition to A-level courses in England and Wales. \emph{Acta Sociologica}, \bold{50} (3): 211--229
 }
 \author{Christiana Kartsonaki}
 %\note{ ~~further notes~~ 
