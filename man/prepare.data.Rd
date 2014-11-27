@@ -14,9 +14,9 @@ prepare.data(dataset)
   \item{dataset}{A data frame with 4 columns only, in the following order:
 	1: student's ID, 2: class, 3: transition (0 if not, 1 if yes) and 4: performance score.}
 }
-\details{
+%\details{
 %  ~~ If necessary, more details than the description above ~~
-}
+%}
 \value{
   \item{dataset}{The data frame given as the argument, with column names changed and missing values removed.}
 %  ~Describe the value returned
@@ -32,4 +32,13 @@ prepare.data(dataset)
 % ~Make other sections like Warning with \section{Warning }{....} ~
 %}
 %\seealso{ ~~objects to See Also as \code{\link{help}}, ~~~ }
+
+\examples{
+# generate a dataset
+data <- data.frame(seq(1:10), rep(c(1, 2, 3), length.out = 10), 
+	rbinom(1, n = 10, p = 0.7), c(rnorm(8, 0, 1), NA, NA))
+
+# run function
+data_clean <- prepare.data(data)
+}
 

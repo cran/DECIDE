@@ -1,8 +1,8 @@
 Package: DECIDE
 Type: Package
 Title: DEComposition of Indirect and Direct Effects
-Version: 1.1
-Date: 10-12-2011
+Version: 1.2
+Date: 27-11-2014
 Author: Christiana Kartsonaki
 Maintainer: Christiana Kartsonaki <christiana.kartsonaki@gmail.com>
 Description: Calculates various estimates for measures of educational
@@ -11,6 +11,7 @@ Description: Calculates various estimates for measures of educational
         estimates obtained from two datasets.
 License: GPL (>= 2)
 LazyLoad: yes
-Packaged: 2011-12-15 18:26:49 UTC; kartsona
+Packaged: 2014-11-27 12:56:37 UTC; ckartsonaki
 Repository: CRAN
-Date/Publication: 2011-12-16 17:47:44
+Date/Publication: 2014-11-27 16:04:40
+NeedsCompilation: no

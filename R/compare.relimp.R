@@ -95,20 +95,7 @@ function(dataset1, dataset2) {
 							 format(ci.diff.lo.upper[i, j], digits=5), ")", sep="")
         		}
     		}
-			
-
-	# point estimates and s.e.
-
-	diff.lo <- matrix(NA, nrow=ri1$no_classes, ncol=ri1$no_classes)
-	se.diff.lo <- matrix(NA, nrow=ri1$no_classes, ncol=ri1$no_classes)
-
-	for (i in 1:dim(ri1$log_odds)[1]) {
-		for (j in 1:dim(ri1$log_odds)[2]) {
-			diff.lo[i, j] <- ri1$log_odds[i, j] - ri2$log_odds[i, j]
-			se.diff.lo[i, j] <- sqrt(((ri1$se_logodds[i, j])^2) + ((ri2$se_logodds[i, j])^2))
-        		}
-    		}
-	
+				
 
 # confidence intervals for differences in log odds ratios
 
@@ -131,18 +118,6 @@ function(dataset1, dataset2) {
     			}
 		}		
 
-
-	# point estimates and s.e.
-
-	diff.lor <- matrix(NA, nrow=ri1$no_classes, ncol=ri1$no_classes)
-	se.diff.lor <- matrix(NA, nrow=ri1$no_classes, ncol=ri1$no_classes)
-
-	for (i in 1:dim(ri1$log_oddsratios)[1]) {
-		for (j in 1:dim(ri1$log_oddsratios)[2]) {
-			diff.lor[i, j] <- ri1$log_oddsratios[i, j] - ri2$log_oddsratios[i, j]
-			se.diff.lor[i, j] <- sqrt(((ri1$se_logoddsratios[i, j])^2) + ((ri2$se_logoddsratios[i, j])^2))
-        		}
-    		}
 
 
 # significance testing
@@ -291,6 +266,6 @@ function(dataset1, dataset2) {
 	test.diff.lor.pvalue <- pchisq(test.diff.lor, df=no_oddsratios(ri1$no_classes), lower.tail=FALSE)
 
 
-return(list("diff.lo"=diff.lo, "se.diff.lo"=se.diff.lo, "ci.diff.lo"=ci.diff.lo, "test.diff.lo"=test.diff.lo, "test.diff.lo.pvalue"=test.diff.lo.pvalue, "diff.lor"=diff.lor, "se.diff.lor"=se.diff.lor, "ci.diff.lor"=ci.diff.lor, "test.diff.lor"=test.diff.lor, "test.diff.lor.pvalue"=test.diff.lor.pvalue, "ci.diff.ri.1"=ci.diff.ri.1, "ci.diff.ri.2"=ci.diff.ri.2, "ci.diff.ri.avg"=ci.diff.ri.avg))
+return(list("ci.diff.lo"=ci.diff.lo, "test.diff.lo"=test.diff.lo, "test.diff.lo.pvalue"=test.diff.lo.pvalue, "ci.diff.lor"=ci.diff.lor, "test.diff.lor"=test.diff.lor, "test.diff.lor.pvalue"=test.diff.lor.pvalue, "ci.diff.ri.1"=ci.diff.ri.1, "ci.diff.ri.2"=ci.diff.ri.2, "ci.diff.ri.avg"=ci.diff.ri.avg))
 }
 

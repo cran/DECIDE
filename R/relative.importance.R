@@ -380,7 +380,7 @@ no_oddsratios <- function(no_classes) {
     		for (j in 1:dim(var.ri.2)[2]) {
         		if (i < j) {
             			var.ri.2[i, j] <- var.relimp.2(logodds[i, i], logodds[j, i], logodds[j, j], var.lo[i, i], var.lo[j, i],
-							var.lo[j, j], cov.lo.ii.ji[i, j], cov.lo.ii.ij[j, i])
+							var.lo[j, j], cov.lo.ii.ji[i, j], cov.lo.ii.ji[j, i])
             			}
         		}
     		}
