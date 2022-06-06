@@ -1,5 +1,5 @@
-# Default NAMESPACE created by R
-# Remove the previous line if you edit this file
+importFrom("graphics", "axis", "lines", "mtext", "par")
+importFrom("stats", "dnorm", "glm", "pchisq", "plogis", "pnorm","qchisq", "sd", "vcov")
 
 # Export all names
 exportPattern(".")
